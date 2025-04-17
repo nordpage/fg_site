@@ -3,7 +3,7 @@ import styles from "./styles.module.css";
 
 const Roadmap : React.FC = () => {
     return (
-        <section className={styles.timelineSection}>
+        <section>
             <h2>Roadmap Windfall</h2>
             <div className={styles.timeline}>
                 <div className={styles.timelineItem}>

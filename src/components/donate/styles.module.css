@@ -1,11 +1,13 @@
-.donateSection {
+.donate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 0 20px;
+    background-color: #2a2a26;
     border-radius: 12px;
-    background: #2a2a26;
-
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 16px;
 }
 
 .buttonLike {

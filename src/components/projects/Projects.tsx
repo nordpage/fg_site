@@ -3,7 +3,7 @@ import styles from "./styles.module.css";
 
 const Projects : React.FC = () => {
     return (
-        <section className={styles.projectsSection}>
+        <section>
             <h2>Проекты</h2>
             <div className={styles.projectsGrid}>
                 <div className={styles.projectCard}>

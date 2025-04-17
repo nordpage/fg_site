@@ -4,10 +4,9 @@ import styles from "./styles.module.css";
 const Donate: React.FC = () => {
     return (
 
-        <section className={styles.donateSection}>
+        <section className={styles.donate}>
             <h2>Поддержать Flutterra</h2>
-            <p>Если тебе близка атмосфера — можешь подкинуть монетку в котелок. Каждое зелье вдохновения помогает
-                проекту развиваться</p>
+            <p>Если тебе близка атмосфера — можешь подкинуть монетку в котелок.</p>
             <a className={styles.buttonLike} href="https://www.donationalerts.com/r/flutterra" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
                      style={{ height: "1em", verticalAlign: "middle", marginRight: "0.4em" }}>

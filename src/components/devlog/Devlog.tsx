@@ -3,7 +3,7 @@ import React from "react";
 
 const Devlog : React.FC = () => {
     return (
-        <section className={styles.devlogSection}>
+        <section>
             <h2>Devlog</h2>
             <div className={styles.devlogBox}>
                 <div className={styles.devlogEntry}>
