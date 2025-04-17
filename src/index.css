@@ -1,0 +1,60 @@
+:root {
+  --accent: #61a38a;
+  --accent-dark: #477865;
+  --bg: #1e1e1b;
+  --text: #e6e4df;
+  --muted: #aaaaaa;
+}
+
+@font-face {
+  font-family: "Inkulinati";
+  src: url("src/assets/Inkulinati-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Spectral', serif;
+  line-height: 1.6;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("src/assets/exclusive-paper.png");
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: 2;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: var(--accent);
+  margin-bottom: 20px;
+  font-family: 'Inkulinati', serif;
+}
+
+.two-cols {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 20px;
+  align-items: start;
+}
+
+footer {
+  text-align: center;
+  margin: 60px 0 30px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
