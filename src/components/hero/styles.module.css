@@ -2,7 +2,7 @@
     position: relative;
     width: 100%;
     height: 90vh;
-    background: url("public/header-dark.png") center/cover no-repeat;
+    background: url("/fg_promo_site/header-dark.png") center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
