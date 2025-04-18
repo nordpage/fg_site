@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "Inkulinati";
-  src: url("/fg_site/Inkulinati-Regular.otf") format("opentype");
+  src: url("/Inkulinati-Regular.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -36,7 +36,7 @@ body::before {
   top: 0; left: 0;
   width: 100%;
   height: 100%;
-  background: url("/fg_site/exclusive-paper.png");
+  background: url("/exclusive-paper.png");
   opacity: 0.3;
   pointer-events: none;
   z-index: 2;
