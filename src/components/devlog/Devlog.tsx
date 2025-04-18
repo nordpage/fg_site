@@ -8,7 +8,7 @@ const Devlog : React.FC = () => {
             <div className={styles.devlogBox}>
                 <div className={styles.devlogEntry}>
                     <h3>Колеса крутятся, тележка мутится...</h3>
-                    <p className={styles.date}>15 апреля 2025</p>
+                    <p className={styles.date}>09 апреля 2025</p>
                     <p>
                         <div>
                             Создаю систему движения тележки. Она будет работать на основе Vehicle3d и Wheel3d. Будет
@@ -18,7 +18,7 @@ const Devlog : React.FC = () => {
                 </div>
                 <div className={styles.devlogEntry}>
                     <h3>Создание системы зельеварения</h3>
-                    <p className={styles.date}>09 апреля 2025</p>
+                    <p className={styles.date}>15 апреля 2025</p>
                     <p>
                         <div>Шейдеры, частицы, сгоревшие нервные клетки - и система зельеварения почти готова.</div>
                         <div>
