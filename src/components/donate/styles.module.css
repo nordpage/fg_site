@@ -10,10 +10,22 @@
     gap: 16px;
 }
 
+.donateText {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+.donateText p {
+    padding: 0 20px;
+    margin: 0;
+}
+
 .buttonLike {
     display: inline-block;
     background-color: var(--accent);
-    color: var(--bg);
+    color: #ffffff;
     padding: 10px 20px;
     border-radius: 8px;
     text-decoration: none;
@@ -22,5 +34,5 @@
 }
 .buttonLike:hover {
     background-color: var(--accent-dark);
-    color: var(--bg);
+    color: var(--muted);
 }
