@@ -1,5 +1,9 @@
 import React from "react";
 import styles from "./styles.module.css";
+import unity from "../../assets/unity.svg";
+import blender from "../../assets/blender.svg";
+import gitea from "../../assets/gitea.svg";
+import wwise from "../../assets/wwise.svg";
 
 const About: React.FC = () => {
   return (
@@ -8,19 +12,16 @@ const About: React.FC = () => {
             <div className={styles.aboutText}>
                 <h2>О Flutterra Games</h2>
                 <p>
-                    Flutterra Games — это я, Анастасия. Делаю игры с ведьмовским вайбом и без спешки.
-                    Люблю детали, атмосферу и когда игроку хочется остаться в игре подольше.
+                    Я работаю над созданием игр на Unity, исследуя атмосферу, визуальные решения и взаимодействие систем.
                 </p>
-                <p>
-                    Все проекты создаются с помощью движка <strong>Godot</strong>, потому что я люблю open source
-                    и не люблю подписки.
-                </p>
+                <p>Windfall — мой основной проект, где я совмещаю программирование, дизайн и концепцию мира.</p>
+                <p>Мне интересны живые, стилизованные миры, в которых технологии остаются за кулисами, а игрок чувствует историю и присутствие.</p>
             </div>
             <div className={styles.aboutLogo}>
-                <img src="https://godotengine.org/assets/press/icon_color.svg" alt="Godot Engine Logo"/>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Blender_logo_no_text.svg"
-                     alt="Blender Logo"/>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Gitea_Logo.svg" alt="Gitea Logo"/>
+                <img src={unity} alt="Unity Engine Logo"/>
+                <img src={blender} alt="Blender Logo"/>
+                <img src={wwise} alt="Wwise Logo"/>
+                <img src={gitea} alt="Gitea Logo"/>
             </div>
         </div>
     </section>

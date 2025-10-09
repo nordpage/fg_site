@@ -5,9 +5,12 @@
 }
 
 .container {
-    max-width: 1200px;
+    width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
 .aboutText p {
@@ -17,6 +20,7 @@
 }
 
 .aboutLogo {
+    max-width: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,8 +32,6 @@
     max-width: 100px;
     display: block;
     margin: 0 auto;
-    filter: grayscale(100%) brightness(1.4);
-    opacity: 0.8;
 }
 
 @media (max-width: 768px) {

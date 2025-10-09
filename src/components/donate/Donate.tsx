@@ -5,7 +5,7 @@ const Donate: React.FC = () => {
     return (
 
         <section className={styles.donate}>
-            <h2>Поддержать Flutterra</h2>
+            <h2>Поддержать Windfall</h2>
             <div className={styles.donateText}>
                 <p>Если тебе близка атмосфера — можешь подкинуть монетку.</p>
                 <p>Это поможет мне в разработке и поддержке проекта.</p>
