@@ -13,6 +13,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Vinque";
+  src: url("/Vinque Rg.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 section {
   max-width: 1200px;
   margin: 60px auto 0;
