@@ -1,9 +1,9 @@
 import React from 'react';
-import Hero from "../components/hero/Hero.tsx";
-import About from "../components/about/About.tsx";
+import Hero from "../components/Hero.tsx";
+import About from "../components/About.tsx";
 import Projects from "../components/projects/Projects.tsx";
 import Roadmap from "../components/roadmap/Roadmap.tsx";
-import Devlog from "../components/devlog/Devlog.tsx";
+import Devlog from "../components/Devlog.tsx";
 import Donate from "../components/donate/Donate.tsx";
 import Contacts from "../components/contacts/Contacts.tsx";
 
