@@ -226,7 +226,7 @@ export default function DarkShatteredSite() {
                                 background:'rgba(20, 20, 25, 0.8)',
                                 border:'1px solid #8b6b9a59',
                                 marginBottom:'48px',
-                                minHeight: '30px',
+                                maxHeight: '30px',
                                 alignItems: 'center',
                                 width: 'fit-content' // 👈 По ширине контента!
                             }}>
