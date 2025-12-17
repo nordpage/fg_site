@@ -1,0 +1,118 @@
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+}
+
+.content {
+    max-width: 900px;
+    text-align: center;
+    z-index: 3;
+}
+
+.subtitle {
+    font-size: 11px;
+    letter-spacing: 5px;
+    color: #8b6b9a;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.title {
+    font-size: 68px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    line-height: 1.15;
+    color: #b8bcc8;
+    font-family: 'Cinzel Rus', serif;
+}
+
+.titleGradient {
+    background: linear-gradient(135deg, #b06080 0%, #8b6b9a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 500;
+}
+
+.description {
+    font-size: 17px;
+    color: #7a8090;
+    line-height: 1.9;
+    margin-bottom: 56px;
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 36px;
+    background: rgba(139, 107, 154, 0.18);
+    border: 1px solid rgba(139, 107, 154, 0.4);
+    color: #a8adb8;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Work Sans', sans-serif;
+    transition: all 0.3s;
+}
+
+.cta:hover {
+    background: rgba(139, 107, 154, 0.28);
+    transform: translateY(-2px);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .hero {
+        min-height: 80vh;
+        padding: 40px 20px;
+    }
+
+    .subtitle {
+        font-size: 9px;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+    }
+
+    .title {
+        font-size: 36px;
+        line-height: 1.2;
+        margin-bottom: 24px;
+    }
+
+    .description {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 32px;
+    }
+
+    .cta {
+        padding: 12px 24px;
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 28px;
+    }
+
+    .description {
+        font-size: 13px;
+    }
+
+    .cta {
+        padding: 10px 20px;
+        font-size: 8px;
+    }
+}
