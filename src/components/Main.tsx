@@ -251,7 +251,7 @@ export default function DarkShatteredSite() {
                                         textDecoration:'none',
                                         borderBottom:'1px solid rgba(139,107,154,0.4)'
                                     }}>
-                                        hello@flutterra.app
+                                        contact@windfall-game.com
                                     </a>
                                 </p>
 
