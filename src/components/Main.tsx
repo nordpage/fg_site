@@ -9,12 +9,53 @@ import Contact from './windfall/Contact';
 
 export default function DarkShatteredSite() {
     const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+    const [windowWidth, setWindowWidth] = useState(
+        typeof window !== 'undefined' ? window.innerWidth : 1200
+    );
 
     useEffect(() => {
         const handleMouseMove = (e: MouseEvent) => setMousePos({ x: e.clientX, y: e.clientY });
+
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth);
+        };
+
+        handleResize();
+
         window.addEventListener('mousemove', handleMouseMove);
-        return () => window.removeEventListener('mousemove', handleMouseMove);
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('mousemove', handleMouseMove);
+            window.removeEventListener('resize', handleResize);
+        };
     }, []);
+
+    // SVG settings based on screen width
+    const isMobile = windowWidth <= 767;
+    const svgStyles = isMobile ? {
+        position: 'absolute' as const,
+        top: '0',
+        left: '0',
+        transform: 'none',
+        width: '100vw',
+        height: '200vh',
+        opacity: 0.25,
+        filter: 'blur(2px)',
+        pointerEvents: 'none' as const,
+        zIndex: 0
+    } : {
+        position: 'absolute' as const,
+        top: '20%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
+        width: '897px',
+        height: '1687px',
+        opacity: 0.25,
+        filter: 'blur(2px)',
+        pointerEvents: 'none' as const,
+        zIndex: 0
+    };
 
     return (
         <>
@@ -73,25 +114,18 @@ export default function DarkShatteredSite() {
                 <div style={{ position: 'relative', zIndex: 10 }}>
                     <Navigation />
 
-                    {/* Background break image - ORIGINAL */}
+                    {/* Background break image */}
                     <div style={{ position: 'relative' }}>
-                        <div style={{
-                            position: 'absolute',
-                            top: '20%',
-                            left: '50%',
-                            transform: 'translate(-50%, -50%)',
-                            width: '897px',
-                            height: '1687px',
-                            opacity: 0.25,
-                            filter: 'blur(2px)',
-                            pointerEvents: 'none',
-                            zIndex: 0
-                        }}>
+                        <div style={svgStyles}>
                             <img
                                 src={Break}
                                 alt=""
                                 aria-hidden="true"
-                                style={{ width: '100%', height: '100%' }}
+                                style={{
+                                    width: '100%',
+                                    height: '100%',
+                                    objectFit: 'contain'
+                                }}
                             />
                         </div>
 

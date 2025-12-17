@@ -67,48 +67,69 @@
     color: #b8bcc8;
 }
 
-/* MOBILE */
-@media (max-width: 768px) {
+/* MOBILE: 480-767px - CLEAN COMPACT DESIGN */
+@media (max-width: 767px) {
     .devlog {
-        padding: 80px 20px;
+        padding: 80px 24px;
     }
 
     .grid {
         grid-template-columns: 1fr;
-        gap: 16px;
+        gap: 12px;
     }
 
     .card {
-        padding: 20px 16px;
+        padding: 16px 20px;
+        padding-right: 75px;
+        min-height: auto;
     }
 
     .tag {
         font-size: 7px;
-        padding: 3px 6px;
+        padding: 3px 7px;
         top: 12px;
         right: 12px;
     }
 
     .date {
         font-size: 9px;
-        margin-bottom: 10px;
+        letter-spacing: 1.5px;
+        margin-bottom: 6px;
+        color: #7a8090;
     }
 
     .title {
-        font-size: 14px;
+        font-size: 15px;
+        line-height: 1.4;
+        color: #b8bcc8;
     }
 }
 
-@media (max-width: 480px) {
+/* SMALL MOBILE: 320-479px */
+@media (max-width: 479px) {
     .devlog {
         padding: 60px 16px;
     }
 
     .card {
-        padding: 16px 12px;
+        padding: 14px 18px;
+        padding-right: 65px;
+    }
+
+    .tag {
+        font-size: 6px;
+        padding: 2px 6px;
+        top: 10px;
+        right: 10px;
+    }
+
+    .date {
+        font-size: 8px;
+        margin-bottom: 5px;
     }
 
     .title {
-        font-size: 13px;
+        font-size: 14px;
+        line-height: 1.3;
     }
 }

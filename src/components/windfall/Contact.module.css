@@ -51,10 +51,10 @@
     opacity: 0.8;
 }
 
-/* MOBILE */
-@media (max-width: 768px) {
+/* MOBILE: 480-767px */
+@media (max-width: 767px) {
     .contact {
-        padding: 80px 20px 60px;
+        padding: 100px 24px 80px;
     }
 
     .email {
@@ -62,12 +62,12 @@
     }
 
     .footer {
-        padding-top: 32px;
+        padding-top: 40px;
         margin-top: 60px;
     }
 
     .copyright {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .tagline {
@@ -75,9 +75,10 @@
     }
 }
 
-@media (max-width: 480px) {
+/* SMALL MOBILE: 320-479px */
+@media (max-width: 479px) {
     .contact {
-        padding: 60px 16px 40px;
+        padding: 80px 16px 60px;
     }
 
     .email {
@@ -85,12 +86,12 @@
     }
 
     .footer {
-        padding-top: 24px;
+        padding-top: 32px;
         margin-top: 40px;
     }
 
     .copyright {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .tagline {
