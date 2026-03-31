@@ -4,7 +4,7 @@ const gameInfo = [
     { label: 'Жанр', value: 'Survival · Exploration' },
     { label: 'Тон', value: 'Dark · Melancholic' },
     { label: 'Платформа', value: 'Win · Mac' },
-    { label: 'Движок', value: 'Unreal Engine' }
+    { label: 'Движок', value: 'Godot' }
 ];
 
 export default function GameInfo() {

@@ -3,10 +3,10 @@ import styles from './Features.module.css';
 import Badge from './Badge';
 
 const features = [
-    { icon: MapPin, label: 'Бесконечная дорога', description: 'Кочевой роуд-муви' },
+    { icon: MapPin, label: 'Бесконечная дорога', description: 'Кочевой роуд-трип' },
     { icon: Beaker, label: 'Алхимия выживания', description: 'Зелья из того, что найдёшь' },
     { icon: Sprout, label: 'Сад в телеге', description: 'Травы растут медленно' },
-    { icon: Sparkles, label: 'Осколки силы', description: 'Разбросаны по миру' }
+    { icon: Sparkles, label: 'Осколки памяти', description: 'Разбросаны по миру' }
 ];
 
 export default function Features() {

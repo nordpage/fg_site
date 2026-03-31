@@ -19,7 +19,7 @@ export default function Contact() {
 
                     <div className={styles.footer}>
                         <p className={styles.copyright}>
-                            Windfall Game © 2025
+                            Windfall Game © 2026
                         </p>
                         <p className={styles.tagline}>
                             "Собирая осколки, которых никогда не будет достаточно"

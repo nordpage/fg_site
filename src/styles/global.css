@@ -9,7 +9,7 @@ body {
     font-family: var(--font-sans);
     color: var(--fg-0);
     line-height: 1.6;
-    background: linear-gradient(180deg, #0b0e13 0%, #12171f 80%, #0b0e13 100%);
+    background: rgba(11, 14, 19, 0.58);
 }
 
 /* ❌ убираем виньетку и плёнку */

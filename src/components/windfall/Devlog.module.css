@@ -16,16 +16,14 @@
 
 .card {
     padding: 32px;
-    background: linear-gradient(
-            135deg,
-            rgba(139, 107, 154, 0.10) 0%,
-            rgba(10, 10, 15, 0.8) 100%
-    );
+    background: rgba(10, 10, 15, 0.5);
     border: 1px solid rgba(139, 107, 154, 0.25);
     text-decoration: none;
-    display: block;
+    display: flex;
+    flex-direction: column;
     position: relative;
     transition: all 0.3s;
+    gap: 8px;
 }
 
 .card:hover {
@@ -34,26 +32,32 @@
     box-shadow: 0 8px 24px rgba(139, 107, 154, 0.2);
 }
 
+.meta {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
 .tag {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    padding: 4px 8px;
+    padding: 4px 10px;
     background: rgba(139, 107, 154, 0.35);
-    font-size: 8px;
+    font-size: 9px;
     letter-spacing: 1.5px;
     color: #a8adb8;
     text-transform: uppercase;
     font-weight: 600;
     font-family: 'Work Sans', sans-serif;
+    border-radius: 999px;
 }
 
 .date {
+    margin-left: auto;
     font-size: 10px;
     letter-spacing: 2px;
     color: #6a7280;
-    margin-bottom: 14px;
     font-family: monospace;
+    opacity: 0.9;
 }
 
 .title {
@@ -61,14 +65,25 @@
     color: #a8adb8;
     line-height: 1.5;
     transition: color 0.3s;
+    width: 100%;
+    text-align: start;
+}
+
+.description {
+    font-size: 14px;
+    color: #c9cfdc;
+    line-height: 1.5;
+    transition: color 0.3s;
+    width: 100%;
+    text-align: start;
 }
 
 .card:hover .title {
     color: #b8bcc8;
 }
 
-/* MOBILE: 480-767px - CLEAN COMPACT DESIGN */
-@media (max-width: 767px) {
+/* MOBILE: 480-900px - CLEAN COMPACT DESIGN */
+@media (max-width: 900px) {
     .devlog {
         padding: 80px 24px;
     }
@@ -78,24 +93,37 @@
         gap: 12px;
     }
 
+    .meta {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 6px;
+        gap: 10px;
+    }
+
     .card {
         padding: 16px 20px;
-        padding-right: 75px;
         min-height: auto;
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
     }
 
     .tag {
-        font-size: 7px;
-        padding: 3px 7px;
-        top: 12px;
-        right: 12px;
+        padding: 4px 10px;
+        font-size: 8px;
+        border-radius: 999px;
+        background: rgba(139, 107, 154, 0.25);
     }
 
     .date {
+        margin-left: auto;
         font-size: 9px;
         letter-spacing: 1.5px;
-        margin-bottom: 6px;
         color: #7a8090;
+        opacity: 0.9;
     }
 
     .title {
@@ -112,20 +140,20 @@
     }
 
     .card {
-        padding: 14px 18px;
-        padding-right: 65px;
+        padding: 14px 16px;
     }
 
     .tag {
-        font-size: 6px;
-        padding: 2px 6px;
-        top: 10px;
-        right: 10px;
+        padding: 3px 8px;
+        font-size: 7px;
+        border-radius: 999px;
+        background: rgba(139, 107, 154, 0.25);
     }
 
     .date {
+        margin-left: auto;
         font-size: 8px;
-        margin-bottom: 5px;
+        opacity: 0.9;
     }
 
     .title {

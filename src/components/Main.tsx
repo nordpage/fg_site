@@ -34,12 +34,12 @@ export default function DarkShatteredSite() {
     // SVG settings based on screen width
     const isMobile = windowWidth <= 767;
     const svgStyles = isMobile ? {
-        position: 'absolute' as const,
-        top: '0',
-        left: '0',
+        position: 'fixed' as const,
+        inset: 0,
         transform: 'none',
         width: '100vw',
-        height: '200vh',
+        height: '100vh',
+        overflow: 'hidden' as const,
         opacity: 0.25,
         filter: 'blur(2px)',
         pointerEvents: 'none' as const,
@@ -57,9 +57,23 @@ export default function DarkShatteredSite() {
         zIndex: 0
     };
 
+    const breakImgStyles = isMobile ? {
+        position: 'absolute' as const,
+        top: '-22vh',
+        left: 0,
+        width: '100%',
+        height: '150vh',
+        objectFit: 'cover' as const,
+        objectPosition: 'top center' as const
+    } : {
+        width: '100%',
+        height: '100%',
+        objectFit: 'contain' as const
+    };
+
     return (
         <>
-            <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Crimson+Text:wght@400;600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+            <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;500;600&family=Crimson+Text:wght@400;600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
 
             <div style={{
                 background: '#000',
@@ -110,33 +124,24 @@ export default function DarkShatteredSite() {
                     transition: 'opacity 0.3s'
                 }} />
 
+                {/* Background break image */}
+                <div style={svgStyles}>
+                    <img
+                        src={Break}
+                        alt=""
+                        aria-hidden="true"
+                        style={breakImgStyles}
+                    />
+                </div>
+
                 {/* Main content */}
                 <div style={{ position: 'relative', zIndex: 10 }}>
                     <Navigation />
-
-                    {/* Background break image */}
-                    <div style={{ position: 'relative' }}>
-                        <div style={svgStyles}>
-                            <img
-                                src={Break}
-                                alt=""
-                                aria-hidden="true"
-                                style={{
-                                    width: '100%',
-                                    height: '100%',
-                                    objectFit: 'contain'
-                                }}
-                            />
-                        </div>
-
-                        <div style={{ position: 'relative', zIndex: 1 }}>
-                            <Hero />
-                            <Features />
-                            <GameInfo />
-                            <Devlog />
-                            <Contact />
-                        </div>
-                    </div>
+                    <Hero />
+                    <Features />
+                    <GameInfo />
+                    <Devlog />
+                    <Contact />
                 </div>
 
                 {/* Scrollbar styling */}
